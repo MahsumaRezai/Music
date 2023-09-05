@@ -1,7 +1,6 @@
 
 import ReactDom from 'react-dom';
 import Card from './Card';
-import Button from './Button';
 import classes from './ErrorModal.module.css';
 import { Fragment } from 'react';
 const Backdrop = (props) => {
@@ -10,15 +9,13 @@ const Backdrop = (props) => {
 const Modaloerlay = (props) => {
     return (
         <Card className={classes.modal}>
-            <header className={classes.header}>
-                <h1>{props.title}</h1>
-            </header>
-            <div className={classes.content}>
-                <p>{props.massage}</p>
+            <div>
+                <h1 className={classes.title}>Welcome everyone </h1>
+                <p className={classes.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br></br>
+               Neque doloremque esse quisquam. Error nostrum mollitia quis,<br></br>
+                 vel nesciunt non fugiat beatae exercitationem <br></br>
+           nisi vitae eius quae perferendis nobis. Laboriosam, quis.</p>
             </div>
-            <footer className={classes.actions}>
-                <Button onClick={props.onconfirm}>Okay</Button>
-            </footer>
         </Card>
     )
 }
