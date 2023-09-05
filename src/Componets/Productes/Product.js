@@ -12,6 +12,7 @@ const Product = (props) => {
                 <ProductOne />
                 <ProductTwo />
                 <ProductThree />
+                <button>See More</button>
 
             </div>
         </Fragment>
