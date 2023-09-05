@@ -4,13 +4,15 @@ import About from "./Componets/About/About";
 import Product from "./Componets/Productes/Product";
 
 
+
+
 function App(props) {
 
     return (
         <Fragment>
             <Head />
-            <About/>
-            <Product/>
+            <About />
+            <Product />
         </Fragment>
     )
 
