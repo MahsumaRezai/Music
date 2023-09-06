@@ -12,7 +12,7 @@ const Product = (props) => {
                 <ProductOne />
                 <ProductTwo />
                 <ProductThree />
-                <button onClick={props.onshow}>See More</button>
+                <button onClick={props.onshow} className={classes.btn}>See More</button>
 
             </div>
         </Fragment>
