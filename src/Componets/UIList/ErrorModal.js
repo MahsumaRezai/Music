@@ -1,7 +1,6 @@
 
 import ReactDom from 'react-dom';
 import Card from './Card';
-import Button from './Button';
 import classes from './ErrorModal.module.css';
 import { Fragment } from 'react';
 const Backdrop = (props) => {
