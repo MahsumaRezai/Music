@@ -23,10 +23,8 @@ function App(props) {
             <Product onshow={ShowCart} />
             {show && <ErroModal onconfirm={close} />}
             <Footer />
-
         </Fragment>
     )
-
 }
 
 export default App;
