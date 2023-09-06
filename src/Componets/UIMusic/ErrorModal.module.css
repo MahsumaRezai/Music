@@ -10,7 +10,7 @@
   
   .modal {
     position: fixed;
-    top: 30vh;
+    top: 10vh;
     left: 10%;
     width: 80%;
     z-index: 100;
@@ -23,30 +23,34 @@
       width: 40rem;
     }
   }
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 30px
-  }
-  form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid darkred;
-    font-size: 14px;
-    color: darkred
-  }
-  form button {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid darkred;
-    background: darkred;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding:50px
 
-
-  }
+}
+.asset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.listen {
+  background:none;
+  border: 10px solid white
+}
+.asset p {
+  color: white;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center
+}
+.img  {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px
+}

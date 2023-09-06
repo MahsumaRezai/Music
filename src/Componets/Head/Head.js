@@ -26,7 +26,7 @@ const Head = (props) => {
     return (
         <Fragment>
             <div className={classes.content}>
-                <div>
+                <div className={classes.head}>
                     <List onshow={ShowCart} />
                     <Lists onsee={showMucises} />
                 </div>

@@ -7,6 +7,11 @@
     height: 700px;
     
 }
+.head {
+    display: flex;
+    flex-direction: row
+
+}
 .list {
     display: flex;
     flex-direction: row;
