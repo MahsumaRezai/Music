@@ -16,30 +16,37 @@
     z-index: 100;
     overflow: hidden;
   }
-  
-  .header {
-    background: #4f005f;
-    padding: 1rem;
-  }
-  
-  .header h2 {
-    margin: 0;
-    color: white;
-  }
-  
-  .content {
-    padding: 1rem;
-  }
-  
-  .actions {
-    padding: 1rem;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
+    
   @media (min-width: 768px) {
     .modal {
       left: calc(50% - 20rem);
       width: 40rem;
     }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px
+  }
+  form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid darkred;
+    font-size: 14px;
+    color: darkred
+  }
+  form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid darkred;
+    background: darkred;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+
   }

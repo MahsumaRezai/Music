@@ -11,8 +11,8 @@ const Head = (props) => {
         setShow(true)
     }
     const close = () => {
-       setShow(false)
-}
+        setShow(false)
+    }
     return (
         <Fragment>
             <div className={classes.content}>

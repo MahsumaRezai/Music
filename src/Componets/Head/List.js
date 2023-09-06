@@ -5,8 +5,10 @@ const List = (props) => {
     return (
         <Fragment>
             <div className={classes.list}>
-                <div onClick={props.onshow}>Lists</div>
-                <div>Contact US</div>
+                <h1 > 
+                    Lists
+                    </h1>
+                <h1 onClick={props.onshow}>Contact US</h1>
             </div>
 
         </Fragment>

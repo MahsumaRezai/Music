@@ -10,15 +10,18 @@ const Backdrop = (props) => {
 const Modaloerlay = (props) => {
     return (
         <Card className={classes.modal}>
-            <header className={classes.header}>
-                <h1>{props.title}</h1>
-            </header>
-            <div className={classes.content}>
-                <p>{props.massage}</p>
-            </div>
-            <footer className={classes.actions}>
-                <Button onClick={props.onconfirm}>Okay</Button>
-            </footer>
+            <form>
+                <h2>
+                    Add Your Information
+                </h2>
+                <input placeholder='Name' />
+                <input placeholder='Email' />
+                <input placeholder='Phone Number' />
+                <input placeholder='Adress' />
+                <button>send</button>
+
+
+            </form>
         </Card>
     )
 }
