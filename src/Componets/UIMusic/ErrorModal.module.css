@@ -1,0 +1,52 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+  }
+  
+  .modal {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+  }
+    
+  @media (min-width: 768px) {
+    .modal {
+      left: calc(50% - 20rem);
+      width: 40rem;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px
+  }
+  form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid darkred;
+    font-size: 14px;
+    color: darkred
+  }
+  form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid darkred;
+    background: darkred;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+
+  }
