@@ -7,5 +7,14 @@
     align-items: center;
     line-height: 1.625;
     padding-top: 20px;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+@media screen and (max-width:900px){
+    .text {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px
+    }
 }

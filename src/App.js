@@ -5,9 +5,6 @@ import Product from "./Componets/Productes/Product";
 import ErroModal from "./Componets/UI/ErrorModal";
 import Footer from "./Componets/Footer/Footer";
 
-
-
-
 function App(props) {
     const [show, setShow] = useState(false);
 
