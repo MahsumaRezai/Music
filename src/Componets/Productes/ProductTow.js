@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import img1 from '../image/img9.jpg';
 import img2 from '../image/img6.jpg';
 import img3 from '../image/img7.jpg';
-
+import Text from '../Text/Text'
 import classes from './Product.module.css';
 
 
@@ -29,6 +29,7 @@ const ProductTwo = (props) => {
                 </div>
 
             </div>
+            <Text />
 
 
         </Fragment>
