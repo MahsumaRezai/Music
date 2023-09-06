@@ -1,7 +1,6 @@
 
 import ReactDom from 'react-dom';
 import Card from './Card';
-import Button from './Button';
 import classes from './ErrorModal.module.css';
 import { Fragment } from 'react';
 const Backdrop = (props) => {
@@ -25,7 +24,7 @@ const Modaloerlay = (props) => {
         </Card>
     )
 }
-const ErroModal = (props) => {
+const ErroModals = (props) => {
     return (
         <Fragment>
             {ReactDom.createPortal(<Backdrop onconfirm={props.onconfirm} />, document.getElementById('backdrop-root'))}
@@ -35,4 +34,4 @@ const ErroModal = (props) => {
     )
 }
 
-export default ErroModal;
+export default ErroModals;
