@@ -26,9 +26,7 @@ const ProductThree = (props) => {
                     <img src={img3} alt="" />
                     <p>What is your favorite Artist</p>
                     <span>Do you listen Music with code</span>
-
                 </div>
-
             </div>
             <Text/>
 

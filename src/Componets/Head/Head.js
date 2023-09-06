@@ -1,24 +1,30 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import classes from './Head.module.css';
-import { Link } from 'react-router-dom'
+import List from "./List";
+import ErroModal from "../UIList/ErrorModal";
 
 const Head = (props) => {
+    const [show, setShow] = useState(false);
+
+
+    const ShowCart = () => {
+        setShow(true)
+    }
+    const close = () => {
+       setShow(false)
+}
     return (
         <Fragment>
             <div className={classes.content}>
                 <div>
-                    <ul className={classes.list}>
-                        <li><Link to='/Lists' className={classes.link}>Lists</Link></li>
-                        <li><Link to='/Lists' className={classes.link}>Contact Us</Link></li>
-
-                    </ul>
+                    <List onshow={ShowCart} />
                 </div>
-
                 <div className={classes.cart}>
                     <h1>Welcome to Music Shop</h1>
                     <p>Hey Do you want to listen good music ? </p>
                     <p>Let go.....</p>
                 </div>
+                {show && <ErroModal onconfirm={close} />}
 
 
             </div>

@@ -5,6 +5,7 @@ import Product from "./Componets/Productes/Product";
 import ErroModal from "./Componets/UI/ErrorModal";
 import Footer from "./Componets/Footer/Footer";
 
+
 function App(props) {
     const [show, setShow] = useState(false);
 
@@ -23,6 +24,7 @@ function App(props) {
             <Product onshow={ShowCart} />
             {show && <ErroModal onconfirm={close} />}
             <Footer />
+
         </Fragment>
     )
 
