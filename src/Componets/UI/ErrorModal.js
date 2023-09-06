@@ -11,10 +11,10 @@ const Modaloerlay = (props) => {
         <Card className={classes.modal}>
             <div>
                 <h1 className={classes.title}>Welcome everyone </h1>
-                <p className={classes.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br></br>
-               Neque doloremque esse quisquam. Error nostrum mollitia quis,<br></br>
-                 vel nesciunt non fugiat beatae exercitationem <br></br>
-           nisi vitae eius quae perferendis nobis. Laboriosam, quis.</p>
+                <p className={classes.text}>Lorem ipsum dolor sit amet,<br></br> consectetur adipisicing elit.<br></br>
+                    Neque doloremque esse quisquam.<br></br> Error nostrum mollitia quis,<br></br>
+                    vel nesciunt non fugiat beatae exercitationem <br></br>
+                    nisi vitae eius quae perferendis nobis. Laboriosam, quis.</p>
             </div>
         </Card>
     )
@@ -23,7 +23,7 @@ const ErroModal = (props) => {
     return (
         <Fragment>
             {ReactDom.createPortal(<Backdrop onconfirm={props.onconfirm} />, document.getElementById('backdrop-root'))}
-            {ReactDom.createPortal(<Modaloerlay title={props.title} massage={props.massage} onconfirm={props.onconfirm} />,
+            {ReactDom.createPortal(<Modaloerlay />,
                 document.getElementById('overlay-root'))}
         </Fragment>
     )

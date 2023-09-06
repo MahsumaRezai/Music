@@ -17,9 +17,10 @@
     overflow: hidden;
   }
   .title{
-    text-align: center;
-    padding-top: 50px;
+    text-align: right;
+    padding-top: 20px;
     color:white;
+    padding-right: 20px
   }
  
   @media (min-width: 768px) {
@@ -31,9 +32,10 @@
   .text {
     color: white;
     line-height: 1.625;;
-    text-align: center;
+    text-align: right;
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 20px;
+    padding-right: 20px
 
   }
